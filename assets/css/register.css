@@ -1,0 +1,218 @@
+.log {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../img/337697-svetik.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.log__wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  color: white;
+  border-radius: 10px;
+  padding: 15px 15px;
+}
+.log__title {
+  color: white;
+  margin-bottom: 30px;
+}
+.log__wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.log__wrapper .log__input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.log__input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+  padding: 20px 45px 20px 20px;
+}
+.log__input-box input::-moz-placeholder {
+  color: white;
+}
+.log__input-box input::placeholder {
+  color: white;
+}
+.log__input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.log__wrapper .log__remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15 px;
+}
+.log__remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+.log__remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+.log__remember-forgot a:hover {
+  text-decoration: underline;
+}
+.log__wrapper .log__btn {
+  width: 100%;
+  height: 45px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+.log__wrapper .log__register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+.log__register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.log__register-link p a:hover {
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.reg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../img/337697-svetik.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.reg__wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  color: white;
+  border-radius: 10px;
+  padding: 15px 15px;
+}
+.reg__title {
+  color: white;
+  margin-bottom: 30px;
+}
+.reg__wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.reg__wrapper .reg__input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.reg__input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+  padding: 20px 45px 20px 20px;
+}
+.reg__input-box input::-moz-placeholder {
+  color: white;
+}
+.reg__input-box input::placeholder {
+  color: white;
+}
+.reg__input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.reg__wrapper .reg__remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15 px;
+}
+.reg__remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+.reg__remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+.reg__remember-forgot a:hover {
+  text-decoration: underline;
+}
+.reg__wrapper .reg__btn {
+  width: 100%;
+  height: 45px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+.reg__wrapper .reg__register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+.reg__register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.reg__register-link p a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=register.css.map */
