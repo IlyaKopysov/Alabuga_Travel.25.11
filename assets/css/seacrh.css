@@ -6,6 +6,10 @@
   list-style: none;
 }
 
+.card__search {
+  display: grid;
+}
+
 .search_and_filtration {
   position: relative;
   top: -20px;
