@@ -41,4 +41,12 @@ p, h2 {
   font-weight: 100;
   margin: 30px;
   margin-top: 200px;
+}
+
+.drop-title {
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+  margin: 30px;
+  margin-top: 200px;
 }/*# sourceMappingURL=pag.css.map */
