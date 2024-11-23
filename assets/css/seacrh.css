@@ -59,7 +59,7 @@
   padding: 10px;
 }
 
-.category-select {
+.category__select {
   position: relative;
   top: -50px;
   display: flex;
