@@ -2,15 +2,12 @@ document.addEventListener('DOMContentLoaded', async function () {
     const searchInput = document.getElementById('search-input');
     const searchList = document.getElementById('search-list');
     let items = [];
-
-    const response = await fetch('https://673611ff5995834c8a954d48.mockapi.io/tasks');
-    const data = await response.json();
-    items = data;
-        
-    function displayItems(itemsToDisplay) {
-        searchList.innerHTML = '';
-        itemsToDisplay.forEach(item => {
-            searchList.innerHTML += `
+  
+        const response = await fetch('https://673611ff5995834c8a954d48.mockapi.io/tasks');
+        const data = await response.json();
+        console.log(data);
+        data.forEach(item => {
+            content.innerHTML += `
               <section class="card__pag">
                   <div class="card__card">
                       <div class="card__card-block">
@@ -20,19 +17,8 @@ document.addEventListener('DOMContentLoaded', async function () {
                       <p class="card__card-txt">${item.text}</p>
                       <p class="card__card-add">${item.addres}</p>
                   </div>
-              </section>
-            `;
+              </section>`;
         });
-    }
-    
-    displayItems(items);
-    searchInput.addEventListener('input', () => {
-        const searchTerm = searchInput.value.toLowerCase();
-        const filteredItems = items.filter(item => {
-            return (
-                item.title.toLowerCase().includes(searchTerm)
-            );
-        });
-        displayItems(filteredItems);
-    });
-});
+        items = Array.from(content.querySelectorAll('.card__pag'));
+        showPage(currentPage);
+  });
