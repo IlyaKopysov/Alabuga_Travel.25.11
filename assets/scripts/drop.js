@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', async function () {
             `;
         });
     }
-    
     categorySelect.addEventListener('change', () => {
         const selectedCategory = categorySelect.value;
         const filteredItems = selectedCategory === 'parks'
