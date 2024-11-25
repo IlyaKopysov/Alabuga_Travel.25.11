@@ -6,7 +6,10 @@ document.addEventListener('DOMContentLoaded', async function () {
     const response = await fetch('https://673611ff5995834c8a954d48.mockapi.io/tasks');
     const data = await response.json();
     items = data;
+<<<<<<< HEAD
         
+=======
+>>>>>>> название_новой_ветки
     function displayItems(itemsToDisplay) {
         searchList.innerHTML = '';
         itemsToDisplay.forEach(item => {
