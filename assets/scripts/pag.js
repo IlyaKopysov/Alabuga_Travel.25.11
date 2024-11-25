@@ -1,13 +1,14 @@
-document.addEventListener('DOMContentLoaded', async () => {
-    const content = document.querySelector('.content');
-    const itemsPerPage = 4;
-    let currentPage = 0;
-    let items = [];
+document.addEventListener("DOMContentLoaded", async () => {
+  const content = document.querySelector(".content");
+  const itemsPerPage = 4;
+  let currentPage = 0;
+  let items = [];
 
-    const response = await fetch('https://673611ff5995834c8a954d48.mockapi.io/tasks');
-    const data = await response.json();
-        data.forEach(item => {
-            content.innerHTML += `
+  const response = await fetch("https://673611ff5995834c8a954d48.mockapi.io/tasks");
+  const data = await response.json();
+  mask.style.display = "flex";
+  data.forEach((item) => {
+    content.innerHTML += `
               <section class="card__pag">
                   <div class="card__card">
                       <div class="card__card-block">
@@ -18,38 +19,41 @@ document.addEventListener('DOMContentLoaded', async () => {
                       <p class="card__card-add">${item.addres}</p>
                   </div>
               </section>`;
-        });
-        
-        items = Array.from(content.querySelectorAll('.card__pag'));
-        totalPages = Math.ceil(items.length / itemsPerPage);
+  });
+  mask.style.display = "none";
+  items = Array.from(content.querySelectorAll(".card__pag"));
+  totalPages = Math.ceil(items.length / itemsPerPage);
+
+  showPage(currentPage);
+  createPagination(totalPages);
+
+  function showPage(pageNumber) {
+    const startIndex = pageNumber * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+
+    items.forEach((item, index) => {
+      if (index >= startIndex && index < endIndex) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+  function createPagination(totalPages) {
+    const pagination = document.createElement("div");
+    pagination.classList.add("pagination");
+
+    for (let i = 0; i < totalPages; i++) {
+      const button = document.createElement("button");
+      button.textContent = i + 1;
+      button.addEventListener("click", () => {
+        currentPage = i;
         showPage(currentPage);
-        createPagination(totalPages);
-
-    function showPage(pageNumber) {
-        const startIndex = pageNumber * itemsPerPage;
-        const endIndex = startIndex + itemsPerPage;
-
-        items.forEach((item, index) => {
-            if (index >= startIndex && index < endIndex) {
-                item.style.display = 'block';
-            } else {
-                item.style.display = 'none';
-            }
-        });
-    }
-    function createPagination(totalPages) {
-        const pagination = document.createElement('div');
-        pagination.classList.add('pagination');
-
-        for (let i = 0; i < totalPages; i++) {
-            const button = document.createElement('button');
-            button.textContent = i + 1;
-            button.addEventListener('click', () => {
-                currentPage = i;
-                showPage(currentPage);
-            });
-            pagination.appendChild(button);
-        }
-        content.after(pagination);
-    }
+      });
+      pagination.appendChild(button);
+}
+    content.after(pagination);
+  }
 });
+
+let mask = document.querySelector(".mask");
