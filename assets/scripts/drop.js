@@ -24,5 +24,10 @@ document.addEventListener('DOMContentLoaded', async function () {
               </section>
             `;
         });
-        items = Array.from(content.querySelectorAll('.card__pag'));
-  });
+    }
+    categorySelect.addEventListener('change', () => {
+        const selectedCategory = categorySelect.value;
+        const filteredItems = selectedCategory === 'parks' ? items : items.filter(item => item.category === selectedCategory);
+        displayItems(filteredItems.slice(0, 4));
+    });
+});

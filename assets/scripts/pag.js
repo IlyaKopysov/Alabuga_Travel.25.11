@@ -2,15 +2,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     const content = document.querySelector('.content');
     const itemsPerPage = 4;
     let currentPage = 0;
-<<<<<<< HEAD
     let items = [];
 
     const response = await fetch('https://673611ff5995834c8a954d48.mockapi.io/tasks');
     const data = await response.json();
-=======
-        const response = await fetch('https://673611ff5995834c8a954d48.mockapi.io/tasks');
-        const data = await response.json();
->>>>>>> название_новой_ветки
         data.forEach(item => {
             content.innerHTML += `
               <section class="card__pag">
