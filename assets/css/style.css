@@ -93,6 +93,11 @@ button {
     font-size: 36px;
   }
 }
+@media (max-width: 600px) {
+  .slider__title {
+    font-size: 30px;
+  }
+}
 .slider__text {
   padding-left: 75px;
   width: 650px;
@@ -111,6 +116,12 @@ button {
   .slider__text {
     font-size: 18px;
     width: 250px;
+  }
+}
+@media (max-width: 340px) {
+  .slider__text {
+    font-size: 18px;
+    width: 200px;
   }
 }
 .slider__link {
@@ -391,6 +402,26 @@ button {
 .pre-end__img {
   width: 100%;
 }
+@media (max-width: 1000px) {
+  .pre-end .pre-end__img {
+    display: none;
+  }
+}
+.pre-end .pre-end__text {
+  position: relative;
+  top: -200px;
+  justify-content: center;
+  display: flex;
+  font-size: 96px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+@media (max-width: 1000px) {
+  .pre-end .pre-end__text {
+    display: none;
+  }
+}
 .pre-end__text {
   position: relative;
   top: -200px;
@@ -566,6 +597,11 @@ button {
     width: 150px;
   }
 }
+@media (max-width: 360px) {
+  .modal__email {
+    width: 100px;
+  }
+}
 
 .modal__text {
   display: flex;
@@ -587,6 +623,11 @@ button {
 @media (max-width: 510px) {
   .modal__text {
     width: 150px;
+  }
+}
+@media (max-width: 360px) {
+  .modal__text {
+    width: 100px;
   }
 }
 
@@ -623,6 +664,12 @@ button {
     font-size: 32px;
   }
 }
+@media (max-width: 360px) {
+  .modal__title {
+    font-size: 15px;
+    width: 150px;
+  }
+}
 
 .modal__container {
   font-size: 30px;
@@ -641,6 +688,11 @@ button {
   border: none;
   padding: 15px 30px;
   margin-top: 60px;
+}
+@media (max-width: 360px) {
+  .modal__btn {
+    font-size: 15px;
+  }
 }
 
 .modal__close {
@@ -875,5 +927,36 @@ button {
   .nav-menu.active {
     right: 0;
     z-index: 2;
+    position: absolute;
+  }
+}
+.cont__number {
+  font-size: 64px;
+  padding-top: 50px;
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+@media (max-width: 800px) {
+  .cont__number {
+    font-size: 54px;
+  }
+}
+@media (max-width: 800px) {
+  .cont__number {
+    font-size: 54px;
+  }
+}
+@media (max-width: 450px) {
+  .cont__number {
+    font-size: 46px;
+  }
+}
+@media (max-width: 390px) {
+  .cont__number {
+    font-size: 42px;
+  }
+}
+@media (max-width: 360px) {
+  .cont__number {
+    font-size: 36px;
   }
 }/*# sourceMappingURL=style.css.map */
