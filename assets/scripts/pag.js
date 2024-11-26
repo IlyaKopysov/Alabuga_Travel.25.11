@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   const itemsPerPage = 4;
   let currentPage = 0;
   let items = [];
+  let mask = document.querySelector(".mask");
 
   const response = await fetch("https://673611ff5995834c8a954d48.mockapi.io/tasks");
   const data = await response.json();
-  mask.style.display = "flex";
   data.forEach((item) => {
     content.innerHTML += `
               <section class="card__pag">
@@ -55,5 +55,3 @@ document.addEventListener("DOMContentLoaded", async () => {
     content.after(pagination);
   }
 });
-
-let mask = document.querySelector(".mask");

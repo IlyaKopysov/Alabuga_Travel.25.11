@@ -16,6 +16,7 @@ const modalController = ({modal, btnOpen, btnClose, time = 300}) => {
       target === modalElem ||
       (btnClose && target.closest(btnClose)) ||
       event.code === 'Escape'
+      // localStorage
       ) {
       
       modalElem.style.opacity = 0;

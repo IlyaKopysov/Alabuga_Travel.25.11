@@ -34,6 +34,12 @@ h2 {
   justify-content: center;
   font-weight: 100;
   margin: 30px;
+  @media (max-width: 570px) {
+    font-size: 24px;
+  }
+  @media (max-width: 445px) {
+    font-size: 18px;
+  }
 }
 
 .search-title {
@@ -42,6 +48,12 @@ h2 {
   font-weight: 100;
   margin: 30px;
   margin-top: 200px;
+  @media (max-width: 570px) {
+    font-size: 24px;
+  }
+  @media (max-width: 445px) {
+    font-size: 18px;
+  }
 }
 
 .drop-title {
@@ -50,6 +62,12 @@ h2 {
   font-weight: 100;
   margin-bottom: 100px;
   margin-top: 200px;
+  @media (max-width: 570px) {
+    font-size: 24px;
+  }
+  @media (max-width: 445px) {
+    font-size: 18px;
+  }
 }
 
 .mask {
