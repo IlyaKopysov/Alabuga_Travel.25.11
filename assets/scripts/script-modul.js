@@ -25,7 +25,6 @@ const modalController = ({modal, btnOpen, btnClose, time = 300}) => {
         modalElem.style.visibility = 'hidden';
       }, time);
 
-      window.removeEventListener('keydown', closeModal);
     }
   }
 
@@ -46,10 +45,4 @@ modalController({
   modal: '.modal1',
   btnOpen: '.section__button1',
   btnClose: '.modal__close',
-});
-
-modalController({
-  modal: '.modal2',
-  btnOpen: '.section__button2',
-  btnClose: '.modal__close'
 });
