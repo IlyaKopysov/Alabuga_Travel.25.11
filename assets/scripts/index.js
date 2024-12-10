@@ -1,17 +1,38 @@
-const slides = document.querySelectorAll('.slide')
+// const слайды = document.querySelectorAll('.slide');
+// const кнопкаВперед = document.querySelector('.next');
+// const кнопкаНазад = document.querySelector('.prev');
 
-for (const slide of slides){
-    slide.addEventListener('click', ()  => {
-        clearActiveClasses()
+// // Индекс текущего слайда
+// let текущийСлайд = 0;
 
-        slide.classList.add('active')
-    })
-}
+// // Функция для отображения слайда по индексу
+// function показатьСлайд(номерСлайда) {
+//   // Скрываем все слайды
+//   слайды.forEach(слайд => {
+//     слайд.style.opacity = 0;
+//     слайд.style.transition = 'opacity 0.5s ease-in-out'; // Добавляем плавный переход
+//   });
 
-function clearActiveClasses () {
-    slides.forEach((slide) => {
-        slide.classList.remove('active')
-    })
-}
+//   // Показываем нужный слайд с плавным переходом
+//   слайды[номерСлайда].style.opacity = 1;
+// }
 
-  
+
+// // Функция для перехода к следующему слайду
+// function следующийСлайд() {
+//   текущийСлайд = (текущийСлайд + 1) % слайды.length;
+//   показатьСлайд(текущийСлайд);
+// }
+
+// // Функция для перехода к предыдущему слайду
+// function предыдущийСлайд() {
+//   текущийСлайд = (текущийСлайд - 1 + слайды.length) % слайды.length;
+//   показатьСлайд(текущийСлайд);
+// }
+
+// // Вешаем обработчики событий на кнопки
+// кнопкаВперед.addEventListener('click', следующийСлайд);
+// кнопкаНазад.addEventListener('click', предыдущийСлайд);
+
+// // Показываем первый слайд при загрузке страницы
+// показатьСлайд(текущийСлайд);

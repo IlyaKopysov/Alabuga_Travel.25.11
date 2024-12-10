@@ -49,10 +49,8 @@ button {
   position: relative;
   z-index: 0;
   display: grid;
-  grid-template-columns: 100% 100% 100%;
   height: 100%;
   padding-left: 0;
-  overflow: hidden;
   transition: transform 0.5s ease-in-out;
 
   &__sub-line {
@@ -62,7 +60,7 @@ button {
   &__container {
     position: relative;
     overflow: hidden;
-    height: 81vh;
+    height: 86vh;
   }
 
   &__img {
@@ -80,16 +78,25 @@ button {
     padding-top: 140px;
     padding-left: 95px;
     text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    @media (max-width:1230px) {
+      font-size: 73px;
+    }
     @media (max-width:1000px) {
-      font-size: 76px;
+      font-size: 70px;
     }
     @media (max-width:950px) {
       font-size: 54px;
     }
-    @media (max-width:600px) {
-      font-size: 36px;
+    @media (max-width:750px) {
+      font-size: 46px;
     }
-    @media (max-width:600px) {
+    @media (max-width:640px) {
+      font-size: 38px;
+    }
+    @media (max-width:380px) {
+      font-size: 34px;
+    }
+    @media (max-width:345px) {
       font-size: 30px;
     }
   }
@@ -102,15 +109,22 @@ button {
     color: white;
     padding-top: 20px;
     padding-left: 95px;
-    @media (max-width:600px) {
-      width: 280px;
+    @media (max-width:780px) {
+      width: 550px;
     }
-    @media (max-width:400px) {
+    @media (max-width:640px) {
+      width: 400px;
+    }
+    @media (max-width:500px) {
+      font-size: 20px;
+      width: 300px;
+    }
+    @media (max-width:375px) {
       font-size: 18px;
       width: 250px;
     }
-    @media (max-width:340px) {
-      font-size: 18px;
+    @media (max-width:345px) {
+      font-size: 16px;
       width: 200px;
     }
   }
@@ -126,11 +140,6 @@ button {
     }
   }
   
-}
-
-.slide {
-  width: 100%;
-  display: none;
 }
 
 .prev {
@@ -868,4 +877,3 @@ button {
   font-size: 36px;
 }
 }
-
