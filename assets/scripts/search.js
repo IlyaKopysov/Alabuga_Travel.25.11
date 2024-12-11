@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', async function () {
     const searchInput = document.getElementById('search-input');
     const searchList = document.getElementById('search-list');
+    const categorySelect = document.getElementById('category__select');
     let items = [];
 
     const response = await fetch('https://673611ff5995834c8a954d48.mockapi.io/tasks');
     const data = await response.json();
     items = data;
-        
+
     function displayItems(itemsToDisplay) {
         searchList.innerHTML = '';
         itemsToDisplay.forEach(item => {
@@ -24,15 +25,23 @@ document.addEventListener('DOMContentLoaded', async function () {
             `;
         });
     }
-    
-    displayItems(items);
-    searchInput.addEventListener('input', () => {
+    function filterItems() {
         const searchTerm = searchInput.value.toLowerCase();
+        const selectedCategory = categorySelect.value;
+    
         const filteredItems = items.filter(item => {
-            return (
-                item.title.toLowerCase().includes(searchTerm)
-            );
+            const matchesSearch = item.title.toLowerCase().includes(searchTerm);
+            const matchesCategory = selectedCategory === 'All' || selectedCategory === '' || item.category === selectedCategory; // Добавлено условие для "All"
+            return matchesSearch && matchesCategory;
         });
         displayItems(filteredItems);
-    });
+    }
+
+
+
+    displayItems(items);
+
+    searchInput.addEventListener('input', filterItems);
+    categorySelect.addEventListener('change', filterItems);
 });
+
