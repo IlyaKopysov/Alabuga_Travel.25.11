@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Leonardo de Caprio",
+    "avatar": "./assets/img/deCaprio.jpg",
+    "text": "Отличный сайт! Нашёл много интересной информации для планирования поездки в Москву. Удобно и понятно.",
+    "id": "1"
+  },
+  {
+    "name": "Patrick Bateman",
+    "avatar": "./assets/img/patrik__bateman.jpg",
+    "text": "Красивый дизайн и удобная навигация. Спасибо за информацию о достопримечательностях!",
+    "id": "2"
+  },
+  {
+    "name": "Walter White",
+    "avatar": "./assets/img/Walter__white.jpg",
+    "text": "Полезный ресурс для путешественников. Рекомендую!",
+    "id": "3"
+  },
+  {
+    "name": "Dwayne Johnson",
+    "avatar": "./assets/img/dwane__jonson.jpg",
+    "text": "Много интересных мест, о которых я раньше не знал. Буду пользоваться вашим сайтом и дальше.",
+    "id": "4"
+  },
+  {
+    "name": "Ryan Reynolds",
+    "avatar": "./assets/img/rhayan__reynolds.jpg",
+    "text": "Спасибо за вдохновение! С помощью вашего сайта сделал отличный маршрут по Москве.",
+    "id": "5"
+  },
+  {
+    "name": "Brad Pitt",
+    "avatar": "./assets/img/brad__pit.jpg",
+    "text": "Отличный сайт! Удобная навигация, красивые фото, много полезной информации. Планирую свою поездку с его помощью.",
+    "id": "6"
+  }
+]

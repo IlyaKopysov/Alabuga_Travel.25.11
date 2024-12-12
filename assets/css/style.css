@@ -978,4 +978,32 @@ button {
   .cont__number {
     font-size: 36px;
   }
+}
+
+.review__img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.reviews__container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.reviews__content {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.reviews__card {
+  width: 300px;
+}
+
+.review__stars {
+  width: 100px;
 }/*# sourceMappingURL=style.css.map */
