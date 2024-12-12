@@ -17,7 +17,7 @@ h2 {
   display: flex;
   justify-content: center;
   gap: 20px;
-  & button{
+  & button {
     text-align: center;
     border-radius: 10px;
     font-size: 20px;
@@ -78,12 +78,12 @@ h2 {
   }
 }
 
-.reviews__title{
+.reviews__title {
   display: flex;
   justify-content: center;
   font-weight: 100;
-  margin-bottom: 60px;
-  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-top: 200px;
   @media (max-width: 570px) {
     font-size: 24px;
   }
@@ -101,11 +101,22 @@ h2 {
   background-color: white;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 100;
-  transition: 1s;
+  transition: opacity 1s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .loader {
@@ -128,17 +139,17 @@ h2 {
   text-shadow: rgb(0, 0, 0) 1px 0 10px;
   @media (max-width: 800px) {
     font-size: 54px;
-}
-@media (max-width: 800px) {
+  }
+  @media (max-width: 800px) {
     font-size: 54px;
-}
-@media (max-width: 450px) {
+  }
+  @media (max-width: 450px) {
     font-size: 46px;
-}
-@media (max-width: 390px) {
+  }
+  @media (max-width: 390px) {
     font-size: 42px;
-}
-@media (max-width: 360px) {
-  font-size: 36px;
-}
+  }
+  @media (max-width: 360px) {
+    font-size: 36px;
+  }
 }
